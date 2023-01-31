@@ -15,6 +15,9 @@ func TestSitemapGenerator(t *testing.T) {
 	sm.SetPretty(true)
 	sm.SetVerbose(false)
 	sm.SetAdapter(&buf)
+	sm.opts.SetOmitDefaultChangeFreq(false)
+	sm.opts.SetOmitDefaultPriority(false)
+	sm.opts.SetOmitDefaultLastMod(false)
 
 	sm.Create()
 	for i := 1; i <= 10; i++ {
