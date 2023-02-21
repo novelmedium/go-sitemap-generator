@@ -1,4 +1,4 @@
-module github.com/porozhnyy/go-sitemap-generator
+module github.com/novelmedium/go-sitemap-generator
 
 go 1.9
 
